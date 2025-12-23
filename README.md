@@ -3,8 +3,12 @@
 Simple supplemental repo containing a Pseudo-SQL example and ERD notes showing how to join EMR medication orders to external pharmacy dispense records.
 
 ## Files
+- PseudoSQL.sql
+- ERD.drawio
+- ERD.png
 
-## Key objects referenced (in [PseudoSQL.sql](c:\Users\michaelsb\OneDrive - UCSF\Desktop\SnapPaper\PseudoSQL.sql))
+## Key objects referenced (in [PseudoSQL.sql])
+
 - [`EMR_Medication_Orders`](c:\Users\michaelsb\OneDrive - UCSF\Desktop\SnapPaper\PseudoSQL.sql)
 - [`Dispense_History`](c:\Users\michaelsb\OneDrive - UCSF\Desktop\SnapPaper\PseudoSQL.sql)
 - [`Patient`](c:\Users\michaelsb\OneDrive - UCSF\Desktop\SnapPaper\PseudoSQL.sql)
