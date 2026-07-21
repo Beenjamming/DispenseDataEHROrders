@@ -25,3 +25,8 @@ Demonstrates a pragmatic matching strategy:
 ## Usage
 - Open [PseudoSQL.sql]
 - Run against your database (SQL Server / compatible engine).
+
+## Zenodo
+ DispenseDataEHROrders_Zenodo  Beenjamming/DispenseDataEHROrders: Dispense Data EHR Orders
+ DOI: 10.5281/zenodo.21479398
+Dispense Data EHR Orders
