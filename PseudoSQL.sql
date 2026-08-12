@@ -27,7 +27,7 @@ from EMR_Medication_Orders
 left join Patient on EMR_Medication_Orders.Patient_ID = Patient.Patient_ID
 left join Medication on EMR_Medication_Orders.Medication_ID = Medication.Medication_ID
 left join Provider on EMR_Medication_Orders.Provider_ID = Provider.Provider_ID
-left join Pharmacy on EMR_Medication_Orders.Pharmacy_ID = Pharmacy
+left join Pharmacy on EMR_Medication_Orders.Pharmacy_ID = Pharmacy.Pharmacy_ID
 
 --Query to pull external pharmacy dispense data 
 select  History_ID
@@ -57,6 +57,11 @@ select  History_ID
 into #Dispense_History_Details
 from Dispense_History
 
+left join Patient on Dispense_History.Patient_ID = Patient.Patient_ID
+left join Medication on Dispense_History.Medication_ID = Medication.Medication_ID
+left join Provider on Dispense_History.Provider_ID = Provider.Provider_ID
+left join Pharmacy on Dispense_History.Pharmacy_ID = Pharmacy.Pharmacy_ID
+
 
 select *
 
@@ -66,5 +71,5 @@ left join #Dispense_History_Details on #EMR_Medication_Orders_Details.Order_ID =
     --For external pharmacies normally a single unique identifier for orders is not available so we can use a combination of other fields to try and match records.
     or (#EMR_Medication_Orders_Details.Patient_ID = #Dispense_History_Details.Patient_ID  --If patient ID is not available in the dispense history, a combination of patient name and dob can be used.
         and #EMR_Medication_Orders_Details.Medication_ID = #Dispense_History_Details.Medication_ID --This can be modifed to either Generic_ID or Generic_Name if needed depending on matching requirements.
-        and #EMR_Medication_Orders_Details.Provider_NPI = #Dispense_History_Details.Provider_NPI 
+                and #EMR_Medication_Orders_Details.NPI = #Dispense_History_Details.NPI
         and #EMR_Medication_Orders_Details.Pharmacy_ID = #Dispense_History_Details.Pharmacy_ID) --If pharmacy ID is not available, a combination of pharmacy phone and/or nabp can be used.  
