@@ -27,6 +27,5 @@ Demonstrates a pragmatic matching strategy:
 - Run against your database (SQL Server / compatible engine).
 
 ## Zenodo
- DispenseDataEHROrders_Zenodo  Beenjamming/DispenseDataEHROrders: Dispense Data EHR Orders
- DOI: 10.5281/zenodo.21479398
+[![DOI](https://zenodo.org/badge/1121410347.svg)](https://doi.org/10.5281/zenodo.21479397)
 Dispense Data EHR Orders
