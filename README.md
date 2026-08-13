@@ -6,16 +6,7 @@ Simple supplemental repo containing a Pseudo-SQL example and ERD notes showing h
 - PseudoSQL.sql
 - ERD.drawio
 - ERD.png
-
-## Key objects referenced (in [PseudoSQL.sql])
-
-- [`EMR_Medication_Orders`](c:\Users\michaelsb\OneDrive - UCSF\Desktop\SnapPaper\PseudoSQL.sql)
-- [`Dispense_History`](c:\Users\michaelsb\OneDrive - UCSF\Desktop\SnapPaper\PseudoSQL.sql)
-- [`Patient`](c:\Users\michaelsb\OneDrive - UCSF\Desktop\SnapPaper\PseudoSQL.sql)
-- [`Medication`](c:\Users\michaelsb\OneDrive - UCSF\Desktop\SnapPaper\PseudoSQL.sql)
-- [`Provider`](c:\Users\michaelsb\OneDrive - UCSF\Desktop\SnapPaper\PseudoSQL.sql)
-- [`Pharmacy`](c:\Users\michaelsb\OneDrive - UCSF\Desktop\SnapPaper\PseudoSQL.sql)
-- temp tables: [`#EMR_Medication_Orders_Details`](c:\Users\michaelsb\OneDrive - UCSF\Desktop\SnapPaper\PseudoSQL.sql), [`#Dispense_History_Details`](c:\Users\michaelsb\OneDrive - UCSF\Desktop\SnapPaper\PseudoSQL.sql)
+- SampleMNedicationDataLoad.ipynb
 
 ## Purpose
 Demonstrates a pragmatic matching strategy:
@@ -23,7 +14,8 @@ Demonstrates a pragmatic matching strategy:
 - Fallback to composite matching by patient, medication (or generic), provider NPI, and pharmacy identifiers.
 
 ## Usage
-- Open [PseudoSQL.sql]
+- Open [SampleMedicationDataLoad.ipynb] to test and understand the matching logic.
+- Modify [PseudoSQL.sql] to fit your EMR database ERD. 
 - Run against your database (SQL Server / compatible engine).
 
 ## Zenodo
