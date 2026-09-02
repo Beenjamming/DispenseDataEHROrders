@@ -1,7 +1,7 @@
 Order_ID,History_ID,Match_Type,Patient_ID,First_Name,Last_Name,Date_of_Birth,Medication_ID,Generic_Name,Provider_ID,NPI,Pharmacy_ID,Pharmacy_Phone,Pharmacy_Phone_Normalized
-O1001,H2001,Matched by Order_ID,,John,Doe,1980-01-01,,Lisinopril,,1234567890,,(555) 123-4567,
-O1004,H2004,Matched by Order_ID,,Bob,Brown,1985-03-15,,Amoxicillin,,1234567890,,5554567890,
-,H2002,Matched by Patient Name/DOB + Pharmacy Phone,,Jane,Smith,1975-05-12,M002,Metformin,,2345678901,,555.234.5678,5552345678
-,H2003,Matched by Patient Name/DOB + Pharmacy Phone,,Alice,Johnson,1990-07-23,M003,Atorvastatin,,3456789012,,+1 555 345 6789,5553456789
-,H2005,Matched by Patient Name/DOB + Pharmacy Phone,,Maria,Garcia,1968-11-02,M005,Albuterol,,2345678901,,(555) 123-4567,5551234567
-,H2007,Matched by Patient Name/DOB + Pharmacy Phone,,Wei,Chen,2001-09-09,M001,Lisinopril,,3456789012,,555.234.5678,5552345678
+O1001,H2001,Matched by Order_ID,P001,John,Doe,1980-01-01,M001,,PR001,,PH001,(555) 123-4567,5551234567
+O1004,H2004,Matched by Order_ID,P004,Bob,Brown,1985-03-15,M004,,PR001,,PH004,5554567890,5554567890
+,H2002,Matched by Patient Name/DOB + Pharmacy Phone,P002,Jane,Smith,1975-05-12,,,PR002,,PH002,555.234.5678,
+,H2003,Matched by Patient Name/DOB + Pharmacy Phone,P003,Alice,Johnson,1990-07-23,,,PR003,,PH003,+1 555 345 6789,
+,H2005,Matched by Patient Name/DOB + Pharmacy Phone,P005,Maria,Garcia,1968-11-02,,,PR002,,PH001,(555) 123-4567,
+,H2007,Matched by Patient Name/DOB + Pharmacy Phone,P006,Wei,Chen,2001-09-09,,,PR003,,PH002,1 (555) 234-5678,
